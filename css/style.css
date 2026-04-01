@@ -1,59 +1,46 @@
-/* Налаштування для всієї сторінки */
+/* Основні налаштування сторінки */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1F1F21; /* Темний фон */
-    color: #FFFFFF; /* Білий текст */
-    margin: 0; /* Прибираємо стандартні відступи браузера */
+    background-color: #1F1F21;
+    color: #FFFFFF;
+    margin: 0;
 }
 
-/* Секція портфоліо */
 .portfolio {
     padding: 50px 20px;
-    text-align: center; /* Центруємо головний заголовок */
+    text-align: center;
 }
 
-/* Головний заголовок */
 .title {
     font-size: 36px;
     margin-bottom: 40px;
 }
 
-/* Сітка для карток (просто розставляє їх в 3 колонки) */
+/* Сітка для карток (Grid) */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 колонки однакової ширини */
-    gap: 30px; /* Відстань між картками */
-    max-width: 1000px; /* Обмежуємо ширину, щоб не розтягувалося на весь екран */
-    margin: 0 auto; /* Ставимо сітку по центру сторінки */
-    text-align: left; /* Повертаємо текст у картках на лівий край */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-/* Сама картка */
 .portfolio-card {
-    background-color: #2A2A2C; /* Трохи світліший фон для картки */
-    border-radius: 10px; /* Закруглені кути */
-    padding-bottom: 20px; /* Відступ знизу всередині картки */
+    background-color: #2A2A2C;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
-/* Картинка всередині картки */
 .card-img {
-    width: 100%; /* Картинка на всю ширину картки */
-    border-top-left-radius: 10px; /* Закруглюємо тільки верхні кути */
+    width: 100%;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-/* Заголовок проекту в картці */
 .card-title {
     font-size: 20px;
     margin-top: 15px;
-    padding-left: 20px; /* Відступ зліва */
-    padding-right: 20px;
-}
-
-/* Опис проекту */
-.card-description {
-    color: #A0A0A0; /* Сірий колір тексту */
-    font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
 }
